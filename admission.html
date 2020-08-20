@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>School Admission</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 mx-auto mt-5">
+            <h2>School Admission Form</h2>
+            <form action="/action_page.php" name="myForm" class="mt-4" onsubmit="return validation()">
+                <div class="form-group">
+                    <label for="fName">Name:</label>
+                    <input type="text" class="form-control" maxlength="20" id="fName" placeholder="Enter name" name="fname" required>
+                </div>
+                <div class="form-group">
+                    <label for="lName">Last Name:</label>
+                    <input type="text" class="form-control" maxlength="20" id="lName" placeholder="Enter last name" name="lname" required>
+                </div>
+                <div class="form-group">
+                <label for="class">Class:</label>
+                <input type="text" class="form-control" id="class" placeholder="Enter class" name="class" required>
+                </div>
+              <div class="form-group">
+                <label for="year">Year of passing:</label>
+                <input type="number" class="form-control" id="year" max="4" placeholder="Year of passing" name="year" required>
+              </div>
+              <div class="form-group">
+                <label for="marks">Percentage of marks:</label>
+                <input type="number" class="form-control" id="marks" placeholder="Enter marks %" name="marks" required>
+              </div>
+              <input type="submit" value="Submit" class="btn btn-primary">
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+​
+

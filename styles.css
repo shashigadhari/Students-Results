@@ -1,0 +1,7 @@
+.student-details th{
+ font-style: italic;
+}
+button a, button a:hover {
+    color: #fff;
+    text-decoration: none;
+}

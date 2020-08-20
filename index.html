@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students​ Result</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container mt-5 pt-5">
+      <button type="button" class="btn btn-primary mb-5"><a href="admission.html" target="_blank">School Admission</a></button>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                <tr><th colspan="4">Students​ Result​ Board</th></tr>
+                  <tr class="student-details">
+                    <th>Student Name</th>
+                    <th>Roll Number</th>
+                    <th>Total Marks</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="table_body">
+                  
+                </tbody>
+              </table>
+        </div>
+    </div>
+    <template id="tr_data">
+    <tr style="color: {color}">
+            <td>{name}</td>
+            <td>{rollNumber}</td>
+            <td>{marks}</td>
+            <td>{status}</td>
+          </tr>
+    </template>
+ <script src="student-results.js"></script>
+</body>
+
+</html>
